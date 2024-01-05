@@ -20,12 +20,6 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width: 768px) {
-  .picture {
-    text-align: center;
-  }
-}
-
 .centered-element {
   display: block;
   width: 500px;
@@ -156,4 +150,10 @@ label[for="new-task"] {
 
 .editMode label {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .picture {
+    text-align: center;
+  }
 }
