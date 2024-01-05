@@ -26,9 +26,9 @@ function createNewTaskElement(taskString) {
   editInput.className = "task";
 
   editButton.innerText = "Edit";
-  editButton.className = "edit";
+  editButton.className = "btn edit";
 
-  deleteButton.className = "delete";
+  deleteButton.className = "btn delete";
   deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
 
@@ -48,6 +48,7 @@ function createNewTaskElement(taskString) {
 function addTask() {
   if (!taskInput.value) return;
   const listItem = createNewTaskElement(taskInput.value);
+  listItem.classList.add("list__item");
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
   taskInput.value = "";
